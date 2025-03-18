@@ -113,7 +113,7 @@ def train_model(train_loader, val_loader, num_labels, epochs=1):
         print(f"Train Loss: {train_loss / len(train_loader)}")
         print(f"Validation Loss: {val_accuracy / val_steps}")
 
-        return model
+    return model
 
 
 def optimize_for_raspberry_pi(model, tokenizer, output_dir):
